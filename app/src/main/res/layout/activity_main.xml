@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.example.lucthoisang.lotoapp.MainActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageviewloto"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textviewtitle"
+        android:textColor="#f20"
+        android:text="Game lo to"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imageviewloto"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/f"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <EditText
+        android:id="@+id/edittextsomin"
+        android:textSize="20sp"
+        android:hint="Nhập vào số min"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/textviewtitle"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_alignTop="@+id/edittextsomin"
+        android:id="@+id/edittextsomax"
+        android:textSize="20sp"
+        android:hint="Nhập vào số max"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/textviewtitle"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Add"
+        android:layout_below="@+id/edittextsomax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/buttonrandom"
+        android:layout_centerHorizontal="true"
+        android:text="Random"
+        android:layout_below="@id/edittextsomax"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textviewketqua"
+        android:text=""
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/buttonrandom"
+        android:textSize="20sp"
+        android:textColor="#f20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
